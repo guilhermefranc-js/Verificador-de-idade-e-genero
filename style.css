@@ -1,0 +1,179 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+body{background-image: url('https://images.pexels.com/photos/557782/pexels-photo-557782.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(221, 219, 219, 0.918);
+
+    /*Fonte*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.6;
+
+     display: flex;
+     flex-direction: column; /*Manter o h1 acima do container*/
+     align-items: center;
+     min-height: 700px;
+     margin: 0;}
+
+
+
+/*o h1 será centralizado pelo align-items: center do body*/
+       h1{margin-bottom: 20px; /*Usar margin-bottom para empurrar o conteúdo para baixo */
+       font-weight: 800;}
+
+
+
+#foto-resultado {
+    /* Define o tamanho do container que vai segurar a foto circular */
+    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.404);
+    /* Garante que o conteúdo que passar do limite seja cortado */
+    overflow: hidden;
+
+
+}
+#foto-resultado img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para preencher o círculo sem distorcer */
+}
+
+
+
+#foto-resultado {    animation: fadeInDown 0.8s ease;
+}
+@keyframes fadeInDown {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0); 
+    }
+}
+
+
+
+
+
+
+section{ /*Deixar sem Height para que ele aumente automaticamente após a foto ser selecionada*/
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow:  0 8px 32ppx rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 500px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
+    -webkit-backdrop-filter: blur(10px);
+    text-align: center;
+
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    border: none;
+
+}
+
+
+
+
+section{
+    animation: fadeInLeft 0.8s ease;
+}
+@keyframes fadeInLeft {
+    from {opacity: 0; transform: translateY(-20px);}
+
+    to {opacity: 1; transform: translateY(0); }
+}
+
+
+
+footer{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.637);
+    width: 200px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.712);
+
+
+align-items: center;
+justify-content: center;
+display: flex;
+margin-top: 80px;
+font-style: italic;}
+
+
+
+div#ano{
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+
+
+div#sexo{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+
+
+#verificarbotao{
+    color: white;
+    box-shadow: 1px 1px 5px black;
+    background: linear-gradient(135deg, #00000088, #6466667c);
+    padding: 10px 20px;
+    width: 140px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+
+
+#verificarbotao:hover{
+    background-color: linear-gradient(135deg, #1a1919d3, #767979c0);
+    transform: scale(0.95);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#nasc{
+    margin-top: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0.3px 1px 3px black;
+    width: 120px;
+}
+
+
+
+#nasc::placeholder{
+    color: rgba(53, 51, 51, 0.562);
+}
+
+
+
+#res{
+    margin: 15px 0;
+    font-size: 20px;
+    margin-top: 25px;
+}
